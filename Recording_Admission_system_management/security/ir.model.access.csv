@@ -1,0 +1,2 @@
+"id,""name"",""model_id"",""group_id:id"",""perm_read"",""perm_write"",""perm_create"",""perm_unlink"""
+"access_RecordingAdmission_model,""access_RecordingAdmission_model"",""recording.admission.manage"",base.group_system,1,1,1,1"

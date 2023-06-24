@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<odoo>
+    <record id="views_recording_form" model="ir.ui.view">
+        <field name="name">recorder.view.form</field>
+        <field name="model">recording.admission.manage</field>
+        <field name="arch" type="xml">
+            <form string="Recording">
+                <sheet>
+                    <group>
+                        <field name="name">name Recorder</field>
+                        <field name="type"/>
+                        <field name="employee"/>
+                        <field name="date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="views_Recording_tree" model="ir.ui.view">
+        <field name="name">Recording.view.tree</field>
+        <field name="model">recording.admission.manage</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="employee"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="actions_recording_views" model="ir.actions.act_window">
+        <field name="name">recording admission</field>
+        <field name="res_model">recording.admission.manage</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="Recorder_root_menu"
+              name="Recorders"
+              sequence="1"/>
+    <menuitem id="Recorder_main_menu"
+              name="Recorder"
+              sequence="1"
+              parent="Recorder_root_menu"/>
+    <menuitem id="all_Recorder_menu"
+              name="All Recorder"
+              sequence="1"
+              parent="Recorder_main_menu"
+              action="actions_Recorder_views"/>
+
+</odoo>
