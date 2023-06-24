@@ -1,1 +1,1 @@
-from . import CovenentRcored_model
+from . import RcoredingAdmission_model

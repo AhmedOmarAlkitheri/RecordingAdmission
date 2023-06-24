@@ -1,15 +1,15 @@
 {
-    'name': 'Covenent_Record_menagment',
+    'name': 'Recording_Admission_menagment',
     'version': '1.0.0',
     'sequence': -100,
-    'author': 'Jumaan askool',
-    'website': ['www.askool','.com'],
-    'category': 'Covenents',
-    'summary': 'Covenents managment system',
-    'description': 'Covvenents management system',
+    'author': 'Ahmed Alkitheri',
+    'website': ['www.Alkitheri','.com'],
+    'category': 'Recording',
+    'summary': 'Recording management system',
+    'description': 'Recording management system',
     'depends': ['base'],
     'data': [
-        'views/Covenet_record_views.xml',
+        'views/Recording_Admission_views.xml',
         'security/ir.model.access.csv',
 
     ],

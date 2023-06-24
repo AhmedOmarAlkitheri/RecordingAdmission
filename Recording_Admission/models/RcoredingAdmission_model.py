@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class CovenentRecordManage(models.Model):
-    _name = 'covenent.record.manage'
-    _description = 'Covenent Record'
+class RcoredingAdmissionManage(models.Model):
+    _name = 'recording.admission.manage'
+    _description = 'Rcoreding Admission'
 
     name = fields.Char(string='Name')
     type = fields.Char(string='Type')
