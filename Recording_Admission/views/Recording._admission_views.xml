@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<odoo>
+    <record id="views_covenent_form" model="ir.ui.view">
+        <field name="name">covenent.view.form</field>
+        <field name="model">covenent.record.manage</field>
+        <field name="arch" type="xml">
+            <form string="Covenent">
+                <sheet>
+                    <group>
+                        <field name="name">name covenet</field>
+                        <field name="type"/>
+                        <field name="employee"/>
+                        <field name="date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="views_covenent_tree" model="ir.ui.view">
+        <field name="name">Covenent.view.tree</field>
+        <field name="model">covenent.record.manage</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="employee"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="actions_covenent_views" model="ir.actions.act_window">
+        <field name="name">covenet recored</field>
+        <field name="res_model">covenent.record.manage</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="Covenet_root_menu"
+              name="Covenents"
+              sequence="1"/>
+    <menuitem id="Covenet_main_menu"
+              name="Covenet"
+              sequence="1"
+              parent="Covenet_root_menu"/>
+    <menuitem id="all_covenet_menu"
+              name="All covenet"
+              sequence="1"
+              parent="Covenet_main_menu"
+              action="actions_covenent_views"/>
+
+</odoo>
